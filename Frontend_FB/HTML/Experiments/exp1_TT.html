@@ -1,50 +1,80 @@
- <!DOCTYPE html>
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Lecture Timetable(2FB)</title>
+  <meta charset="UTF-8">
+  <title>2FB Lecture Timetable</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      margin: 30px;
+      background-color: #f5f7fa;
+      color: #333;
     }
-    table {
-      border-collapse: collapse;
-      width: 100%;
+
+    h2 {
       text-align: center;
+      margin-bottom: 25px;
+      color: #222;
     }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
     th, td {
-      border: 1px solid #ccc;
-      padding: 10px;
+      padding: 12px 15px;
+      text-align: center;
+      font-size: 14px;
     }
+
     th {
-      background: #ee7905;
-      color: white;
+      background: #ff8c42;
+      color: #fff;
+      font-weight: 600;
     }
-    tr:nth-child(even) {
+
+    tr:nth-child(even) td {
       background: #f9f9f9;
     }
-    .time-col {
+
+    .slot {
       background: #f1f1f1;
       font-weight: bold;
+      color: #444;
+    }
+
+    td {
+      transition: background 0.3s;
+    }
+
+    td:hover {
+      background: #e8f4ff;
     }
   </style>
 </head>
 <body>
 
-  <h2>Lecture Timetable</h2>
+  <h2>Lecture Timetable (2FB)</h2>
 
   <table>
     <tr>
-      <th>Time \ Day</th>
+      <th>Time / Day</th>
       <th>Monday</th>
       <th>Tuesday</th>
       <th>Wednesday</th>
       <th>Thursday</th>
       <th>Friday</th>
     </tr>
-    
+
     <tr>
-      <td class="time-col">08:00 - 09:00</td>
+      <td class="slot">08:00 - 09:00</td>
       <td>BCSC 0801<br>AB-VIII<br>Room 405</td>
       <td>BCSC 0804<br>AB-II<br>Room 5004</td>
       <td>BCSC 1002<br>AB-VIII<br>Room 405</td>
@@ -53,7 +83,7 @@
     </tr>
 
     <tr>
-      <td class="time-col">09:00 - 10:00</td>
+      <td class="slot">09:00 - 10:00</td>
       <td>BCSC 0801<br>AB-VIII<br>Room 405</td>
       <td>BCSC 0804<br>AB-II<br>Room 5004</td>
       <td>BCSC 1002<br>AB-VIII<br>Room 405</td>
@@ -62,7 +92,7 @@
     </tr>
 
     <tr>
-      <td class="time-col">10:00 - 11:00</td>
+      <td class="slot">10:00 - 11:00</td>
       <td>BCSE 0813<br>AB-VIII<br>Room 405</td>
       <td>BELH 0020<br>AB-VIII<br>Room 405</td>
       <td>BCSC 1005<br>AB-VIII<br>Room 405</td>
@@ -71,7 +101,7 @@
     </tr>
 
     <tr>
-      <td class="time-col">11:00 - 12:00</td>
+      <td class="slot">11:00 - 12:00</td>
       <td>BCSE 0813<br>AB-VIII<br>Room 405</td>
       <td>BCSE 0031<br>AB-VIII<br>Room 405</td>
       <td>BCSE 0031<br>AB-VIII<br>Room 405</td>
@@ -80,7 +110,7 @@
     </tr>
 
     <tr>
-      <td class="time-col">01:00 - 02:00</td>
+      <td class="slot">01:00 - 02:00</td>
       <td>BELH 0020<br>AB-VIII<br>Room 405</td>
       <td>BCSC 1010<br>AB-I<br>Room 330</td>
       <td>PCPH 0001<br>AB-VIII<br>Room 204</td>
@@ -89,7 +119,7 @@
     </tr>
 
     <tr>
-      <td class="time-col">02:00 - 03:00</td>
+      <td class="slot">02:00 - 03:00</td>
       <td>BCSC 1010<br>AB-I<br>Room 201</td>
       <td>----</td>
       <td>----</td>
@@ -98,14 +128,13 @@
     </tr>
 
     <tr>
-      <td class="time-col">03:00 - 04:00</td>
+      <td class="slot">03:00 - 04:00</td>
       <td>BCSC 1003<br>AB-VIII<br>Room 405</td>
       <td>BCSC 1003<br>AB-VIII<br>Room 405</td>
       <td>BELH 0020<br>AB-VIII<br>Room 405</td>
       <td>BELH 0020<br>AB-VIII<br>Room 405</td>
       <td>----</td>
     </tr>
-
   </table>
 
 </body>
