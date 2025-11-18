@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+             gap: 20px;
+            /* horizontal
+             + vertical gap */
+            /* flex-direction: column;  */
+
+            flex-direction: row;
+
+            /* try row-reverse, column, column-reverse */
+
+            border: 2px solid #333;
+            margin: 20px;
+            height: 200px;
+            
+
+              background-color: lightyellow;
+
+            /* useful for vertical alignment demos */
+
+            flex-flow: row wrap;
+
+            /* direction + wrap together */
+
+             justify-content: space-evenly;
+
+            /* justify-content: flex-start;
+            justify-content: flex-end;  */
+            /* justify-content: center; */
+            /* justify-content: space-around; */
+
+            align-items: center;
+
+            /* align-items: flex-start;
+            align-items: flex-end;
+            align-items: center;
+            align-items: baseline; */
+
+            flex-wrap: wrap;
+
+            align-content: space-between;
+
+            /* align-content: stretch;
+            align-content: flex-start;
+            align-content: flex-end;
+            align-content: center;
+            align-content: space-around; */
+     
+        }
+
+        .item {
+            background: lightblue;
+            border: 1px solid #333;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            width: 120px;
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+</body>
+
+</html>
