@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cardbox</title>
+    <style>
+        body{
+            background: #aabbc9;
+        }
+        .card{
+            width: 300px;
+            height: 400px;
+            background: #b3afaf;
+            border-radius: 15px;
+            border: 2px solid black;
+            overflow: hidden;
+           text-align: center;
+
+           
+        }
+         .card:hover {
+      /* transform: translateY(-8px); */
+      transform: rotate(360deg);
+    }
+        .card h3 h6{
+        margin: 1rem 0 0.5rem;
+        color:rgb(18, 18, 17);
+    }
+    a{
+        text-decoration: none;
+        
+    }
+    button{
+        background: #8999ed;
+        margin:0 8px 0;
+    }
+   .card p{
+    font-size: 0.9rem;
+    padding: 0 1rem;
+    color: #323232;
+  }
+    </style>
+</head>
+<body>
+    <div style="display: flex; justify-content: center; flex-wrap: wrap; justify-content: center;gap: 2rem;">
+        <div class="card" >
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPpodqQKboX2WVTR0mjPxBzyOiwqhYhf0Tog&s" alt="" style="width: 100%; height: 50%; object-fit: cover;">
+            <h3>Elon Musk</h3>
+            <hr>
+            <p>Elon Reeve Musk is an international businessman and entrepreneur known for his leadership of Tesla, SpaceX, X (formerly Twitter), and the Department of Government</p>
+            <button><a href="https://www.microsoft.com/en-in/">Company</a></button>
+            <button><a href="https://en.wikipedia.org/wiki/Elon_Musk">About us</a></button>
+        </div>
+    </div>
+</body>
+</html>
