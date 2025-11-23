@@ -1,0 +1,68 @@
+body {
+    font-family: Arial;
+    background: #f1f1f1;
+}
+
+.container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+#task_text, #level_task {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#btn_save {
+    width: 100%;
+    padding: 10px;
+    background: #4285f4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.item_box {
+    list-style: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.item_box span {
+    flex: 1;
+    font-size: 17px;
+}
+
+.done_mark {
+    text-decoration: line-through;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+
+.btn_edit, .btn_done {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+}
+
+.btn_edit {
+    background: #5bc0de;
+}
+
+.btn_done {
+    background: #5cb85c;
+}
